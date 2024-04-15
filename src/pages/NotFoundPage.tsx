@@ -5,17 +5,13 @@ const NotFoundPage = () => {
   return (
     <Box className="page-not-found">
       <Typography className="page-not-found__title" variant="h1" component="h1">
-        Oops!
+        ¡Sitio no encontrado!
       </Typography>
-      <Box className="page-not-found__animation-container">
-        <Box className="page-not-found__illustration"></Box>
-      </Box>
       <Typography className="page-not-found__message" component="p">
-        It seems you've wandered off the shopping path. Let's get you back on
-        track!
+        Parece que te has desviado del camino de las compras.
       </Typography>
       <Link to="/" className="page-not-found__link">
-        Return to Home
+        Volver al Inicio
       </Link>
     </Box>
   );

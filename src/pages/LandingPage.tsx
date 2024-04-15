@@ -70,11 +70,10 @@ const LandingPage = () => {
               </Button>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Box
-                className="hero"
-                component="div"
-                style={{ backgroundImage: `url(./assets/open.jpg)` }}
-              />
+              <Box className="hero" component="div">
+                <img src={"./open.jpg"} alt="Imagen" />{" "}
+                {/* Asegúrate de añadir un alt para accesibilidad */}
+              </Box>
             </Grid>
           </Grid>
         </Container>

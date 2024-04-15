@@ -109,11 +109,9 @@ const HomePage = () => {
     <div>
       <header>
         <Header />
-        <Box
-          className="hero"
-          component="div"
-          style={{ backgroundImage: `url(./assets/open.jpg)` }}
-        />
+        <Box className="hero" component="div">
+          <img src={"./open.jpg"} alt="Imagen" />{" "}
+        </Box>
       </header>
       <main>
         <Box
