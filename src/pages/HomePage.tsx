@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import { AddShoppingCart, Delete, Edit } from "@mui/icons-material";
 import { Link } from "react-router-dom";
+import openImage from "../assets/open.jpg";
 
 import {
   deleteAProduct,
@@ -110,7 +111,12 @@ const HomePage = () => {
       <header>
         <Header />
         <Box className="hero" component="div">
-          <img src={"./open.jpg"} alt="Imagen" />{" "}
+          <CardMedia
+            component="img"
+            image={openImage}
+            alt="Imagen"
+            style={{ borderRadius: "50%" }}
+          />
         </Box>
       </header>
       <main>

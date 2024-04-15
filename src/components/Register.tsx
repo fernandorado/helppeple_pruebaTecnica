@@ -84,7 +84,7 @@ const Register = () => {
         >
           <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}></Avatar>
           <Typography component="h1" variant="h5">
-            Sign up
+            Registrar
           </Typography>
           {showAlert && (
             <Alert variant="outlined" severity="error">
@@ -104,7 +104,7 @@ const Register = () => {
                   required
                   fullWidth
                   id="name"
-                  label="Name"
+                  label="Nombre"
                   autoFocus
                   {...register("name", {
                     required: "Name is required",
@@ -118,7 +118,7 @@ const Register = () => {
                   required
                   fullWidth
                   id="email"
-                  label="Email Address"
+                  label="Correo"
                   autoComplete="email"
                   variant="outlined"
                   {...register("email", {
@@ -136,7 +136,7 @@ const Register = () => {
                 <TextField
                   required
                   fullWidth
-                  label="Password"
+                  label="Contraseña"
                   type="password"
                   id="password"
                   autoComplete="new-password"
@@ -151,7 +151,7 @@ const Register = () => {
                 <TextField
                   required
                   fullWidth
-                  label="Confirm Password"
+                  label="Confirmar Contraseña"
                   type="password"
                   id="password"
                   {...register("password", {
@@ -182,12 +182,12 @@ const Register = () => {
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
             >
-              Sign Up
+              Registrar
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link to="/login" color="inherit">
-                  Already have an account? Sign in
+                  ¿Ya tienes una cuenta? Inicia sesión
                 </Link>
               </Grid>
             </Grid>

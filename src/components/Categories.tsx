@@ -35,7 +35,7 @@ const Categories = () => {
   };
 
   return (
-    <div style={{ margin: "100px" }}>
+    <div>
       <header>
         <Header />
       </header>

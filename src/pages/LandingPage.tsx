@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Link, useNavigate } from "react-router-dom";
-
+import openImage from "../assets/home.webp";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import useCustomSelector from "../hooks/useCustomSelector";
@@ -70,10 +70,11 @@ const LandingPage = () => {
               </Button>
             </Grid>
             <Grid item xs={12} md={6}>
-              <Box className="hero" component="div">
-                <img src={"./open.jpg"} alt="Imagen" />{" "}
-                {/* Asegúrate de añadir un alt para accesibilidad */}
-              </Box>
+              <Box
+                className="hero"
+                component="div"
+                style={{ backgroundImage: `url(${openImage})` }}
+              />
             </Grid>
           </Grid>
         </Container>
